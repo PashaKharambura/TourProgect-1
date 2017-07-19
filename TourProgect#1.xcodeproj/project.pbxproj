@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D51F1FD384002448B5 /* AppDelegate.swift */; };
-		29F2B4D81F1FD384002448B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D71F1FD384002448B5 /* ViewController.swift */; };
 		29F2B4DB1F1FD384002448B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4D91F1FD384002448B5 /* Main.storyboard */; };
 		29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */; };
 		29F2B4E01F1FD384002448B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4DF1F1FD384002448B5 /* Assets.xcassets */; };
 		29F2B4E31F1FD384002448B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4E11F1FD384002448B5 /* LaunchScreen.storyboard */; };
+		29F2B4EB1F1FD3A1002448B5 /* Tours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4EA1F1FD3A1002448B5 /* Tours.swift */; };
+		29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4EC1F1FD4E1002448B5 /* Event.swift */; };
+		29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4EE1F1FD56E002448B5 /* User.swift */; };
+		29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4F01F1FD5F0002448B5 /* Organisator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29F2B4D21F1FD384002448B5 /* TourProgect#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TourProgect#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2B4D51F1FD384002448B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29F2B4D71F1FD384002448B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29F2B4DA1F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F2B4DD1F1FD384002448B5 /* TourProgect_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TourProgect_1.xcdatamodel; sourceTree = "<group>"; };
 		29F2B4DF1F1FD384002448B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F2B4E21F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F2B4E41F1FD384002448B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F2B4EA1F1FD3A1002448B5 /* Tours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tours.swift; sourceTree = "<group>"; };
+		29F2B4EC1F1FD4E1002448B5 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		29F2B4EE1F1FD56E002448B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29F2B4F01F1FD5F0002448B5 /* Organisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organisator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
-				29F2B4D71F1FD384002448B5 /* ViewController.swift */,
 				29F2B4D91F1FD384002448B5 /* Main.storyboard */,
 				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
 				29F2B4E11F1FD384002448B5 /* LaunchScreen.storyboard */,
 				29F2B4E41F1FD384002448B5 /* Info.plist */,
 				29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */,
+				29F2B4EA1F1FD3A1002448B5 /* Tours.swift */,
+				29F2B4EC1F1FD4E1002448B5 /* Event.swift */,
+				29F2B4EE1F1FD56E002448B5 /* User.swift */,
+				29F2B4F01F1FD5F0002448B5 /* Organisator.swift */,
 			);
 			path = "TourProgect#1";
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F2B4D81F1FD384002448B5 /* ViewController.swift in Sources */,
+				29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */,
+				29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */,
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
+				29F2B4EB1F1FD3A1002448B5 /* Tours.swift in Sources */,
+				29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */,
 				29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
