@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4C1F20ACAC000633ED /* LogInViewController.swift */; };
+		2960AD4F1F20B209000633ED /* AllToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4E1F20B209000633ED /* AllToursViewController.swift */; };
 		29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D51F1FD384002448B5 /* AppDelegate.swift */; };
 		29F2B4DB1F1FD384002448B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4D91F1FD384002448B5 /* Main.storyboard */; };
 		29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2960AD4C1F20ACAC000633ED /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2960AD4E1F20B209000633ED /* AllToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursViewController.swift; sourceTree = "<group>"; };
 		29F2B4D21F1FD384002448B5 /* TourProgect#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TourProgect#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2B4D51F1FD384002448B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F2B4DA1F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				29F2B4EC1F1FD4E1002448B5 /* Event.swift */,
 				29F2B4EE1F1FD56E002448B5 /* User.swift */,
 				29F2B4F01F1FD5F0002448B5 /* Organisator.swift */,
+				2960AD4C1F20ACAC000633ED /* LogInViewController.swift */,
+				2960AD4E1F20B209000633ED /* AllToursViewController.swift */,
 			);
 			path = "TourProgect#1";
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */,
 				29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */,
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
+				2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */,
+				2960AD4F1F20B209000633ED /* AllToursViewController.swift in Sources */,
 				29F2B4EB1F1FD3A1002448B5 /* Tours.swift in Sources */,
 				29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */,
 				29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */,
@@ -317,6 +325,7 @@
 				29F2B4E91F1FD384002448B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
