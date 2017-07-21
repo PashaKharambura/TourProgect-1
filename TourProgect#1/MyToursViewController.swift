@@ -24,6 +24,11 @@ class MyToursViewController: UIViewController, UITableViewDataSource, UITableVie
         return .lightContent
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myTours.count
     }
