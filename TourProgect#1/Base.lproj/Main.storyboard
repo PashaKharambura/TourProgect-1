@@ -492,9 +492,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jPR-Be-WUI"/>
-                    <connections>
-                        <outlet property="withYouButton" destination="nj2-4v-2Yu" id="ZSI-NU-ReO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRD-7S-qRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
