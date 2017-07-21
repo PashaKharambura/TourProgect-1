@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2928AD7B1F211AFA0050BBE8 /* MyTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */; };
+		2928AD841F21370B0050BBE8 /* AllToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD831F21370B0050BBE8 /* AllToursViewController.swift */; };
+		2928AD861F21372B0050BBE8 /* AllToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */; };
+		2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD871F21BE1E0050BBE8 /* ProfileViewController.swift */; };
 		2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4C1F20ACAC000633ED /* LogInViewController.swift */; };
-		2960AD4F1F20B209000633ED /* AllToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4E1F20B209000633ED /* AllToursViewController.swift */; };
+		2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4E1F20B209000633ED /* MyToursViewController.swift */; };
 		29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D51F1FD384002448B5 /* AppDelegate.swift */; };
 		29F2B4DB1F1FD384002448B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4D91F1FD384002448B5 /* Main.storyboard */; };
 		29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */; };
@@ -21,8 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTourTableViewCell.swift; sourceTree = "<group>"; };
+		2928AD831F21370B0050BBE8 /* AllToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursViewController.swift; sourceTree = "<group>"; };
+		2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursTableViewCell.swift; sourceTree = "<group>"; };
+		2928AD871F21BE1E0050BBE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2960AD4C1F20ACAC000633ED /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		2960AD4E1F20B209000633ED /* AllToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursViewController.swift; sourceTree = "<group>"; };
+		2960AD4E1F20B209000633ED /* MyToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyToursViewController.swift; sourceTree = "<group>"; };
 		29F2B4D21F1FD384002448B5 /* TourProgect#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TourProgect#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2B4D51F1FD384002448B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F2B4DA1F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2928AD7D1F211D790050BBE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29F2B4EA1F1FD3A1002448B5 /* Tours.swift */,
+				29F2B4EC1F1FD4E1002448B5 /* Event.swift */,
+				29F2B4EE1F1FD56E002448B5 /* User.swift */,
+				29F2B4F01F1FD5F0002448B5 /* Organisator.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2928AD7E1F211D940050BBE8 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				2960AD4E1F20B209000633ED /* MyToursViewController.swift */,
+				2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */,
+				2928AD831F21370B0050BBE8 /* AllToursViewController.swift */,
+				2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */,
+			);
+			name = Tours;
+			sourceTree = "<group>";
+		};
+		2928AD7F1F211DA80050BBE8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2928AD7E1F211D940050BBE8 /* Tours */,
+				2960AD4C1F20ACAC000633ED /* LogInViewController.swift */,
+				2928AD871F21BE1E0050BBE8 /* ProfileViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2928AD811F211DE60050BBE8 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				29F2B4D91F1FD384002448B5 /* Main.storyboard */,
+				29F2B4E11F1FD384002448B5 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2928AD821F211E120050BBE8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
+				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
+				29F2B4E41F1FD384002448B5 /* Info.plist */,
+				29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		29F2B4C91F1FD384002448B5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +126,10 @@
 		29F2B4D41F1FD384002448B5 /* TourProgect#1 */ = {
 			isa = PBXGroup;
 			children = (
-				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
-				29F2B4D91F1FD384002448B5 /* Main.storyboard */,
-				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
-				29F2B4E11F1FD384002448B5 /* LaunchScreen.storyboard */,
-				29F2B4E41F1FD384002448B5 /* Info.plist */,
-				29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */,
-				29F2B4EA1F1FD3A1002448B5 /* Tours.swift */,
-				29F2B4EC1F1FD4E1002448B5 /* Event.swift */,
-				29F2B4EE1F1FD56E002448B5 /* User.swift */,
-				29F2B4F01F1FD5F0002448B5 /* Organisator.swift */,
-				2960AD4C1F20ACAC000633ED /* LogInViewController.swift */,
-				2960AD4E1F20B209000633ED /* AllToursViewController.swift */,
+				2928AD811F211DE60050BBE8 /* StoryBoard */,
+				2928AD7D1F211D790050BBE8 /* Model */,
+				2928AD7F1F211DA80050BBE8 /* Controllers */,
+				2928AD821F211E120050BBE8 /* SupportingFiles */,
 			);
 			path = "TourProgect#1";
 			sourceTree = "<group>";
@@ -156,9 +208,13 @@
 			files = (
 				29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */,
 				29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */,
+				2928AD841F21370B0050BBE8 /* AllToursViewController.swift in Sources */,
+				2928AD861F21372B0050BBE8 /* AllToursTableViewCell.swift in Sources */,
+				2928AD7B1F211AFA0050BBE8 /* MyTourTableViewCell.swift in Sources */,
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
+				2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */,
 				2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */,
-				2960AD4F1F20B209000633ED /* AllToursViewController.swift in Sources */,
+				2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */,
 				29F2B4EB1F1FD3A1002448B5 /* Tours.swift in Sources */,
 				29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */,
 				29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */,

@@ -8,32 +8,33 @@
 
 import UIKit
 
-class AllToursViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class MyToursViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tourTableView: UITableView!
 
-    
-    var myTours = ["First", "Second"]
+
+    var myTours = ["First"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tourTableView.delegate = self;
         self.tourTableView.dataSource = self;
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myTours.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myToursCell")! as! AllToursTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myToursCell")! as! MyTourTableViewCell
+       
         
-        cell.tourImage.image = UIImage(named: "\(indexPath.row+1)")
         return cell
     }
 
+    
+    
 }

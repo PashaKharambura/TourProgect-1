@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +37,7 @@
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="BDh-OS-OTt"/>
+                                            <segue destination="0SF-PG-mMd" kind="show" id="JbY-Gu-Ccp"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_up" translatesAutoresizingMaskIntoConstraints="NO" id="WaO-r0-6xt">
@@ -101,12 +102,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmj-wk-gOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="-81.409295352323838"/>
+            <point key="canvasLocation" x="471" y="-83"/>
         </scene>
-        <!--All Tours View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="uLP-D4-BG3">
+            <objects>
+                <tabBarController id="0SF-PG-mMd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SBN-ff-KPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4H9-pI-c9s"/>
+                        <segue destination="67Q-sm-Snq" kind="relationship" relationship="viewControllers" id="2aV-Zc-yyW"/>
+                        <segue destination="hce-2B-jdu" kind="relationship" relationship="viewControllers" id="Mcm-H7-3t9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PQ-rM-669" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="-83"/>
+        </scene>
+        <!--Мої тури-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="AllToursViewController" customModule="TourProgect_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MyToursViewController" customModule="TourProgect_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -133,22 +153,305 @@
                                     <constraint firstAttribute="height" constant="53" id="dDp-oE-PPh"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="317" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e66-CF-g9X">
+                                <rect key="frame" x="0.0" y="73" width="375" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myToursCell" rowHeight="317" id="Ygx-mB-178" customClass="MyTourTableViewCell" customModule="TourProgect_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="317"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ygx-mB-178" id="cIw-v8-wWE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myTourTest" translatesAutoresizingMaskIntoConstraints="NO" id="CXu-eu-Jco">
+                                                    <rect key="frame" x="10" y="10" width="355" height="306.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekend в Одесі" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSG-BW-ZNe" userLabel="TourNameLabel">
+                                                    <rect key="frame" x="22" y="22" width="331" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Інформація про круті та цікаві штуки в турі - Інформація про круті та цікаві штуки в турі" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-45-WBq">
+                                                    <rect key="frame" x="53" y="58.5" width="269" height="61"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29.07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpi-Cq-OcO">
+                                                    <rect key="frame" x="20" y="116" width="335" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="OKI-mP-e2a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tFs-45-WBq" firstAttribute="top" secondItem="rSG-BW-ZNe" secondAttribute="bottom" constant="8" id="7Dp-A7-Wnf"/>
+                                                <constraint firstItem="CXu-eu-Jco" firstAttribute="top" secondItem="cIw-v8-wWE" secondAttribute="top" constant="10" id="9fU-Qa-bra"/>
+                                                <constraint firstAttribute="trailing" secondItem="CXu-eu-Jco" secondAttribute="trailing" constant="10" id="GZI-KY-Onj"/>
+                                                <constraint firstItem="qpi-Cq-OcO" firstAttribute="leading" secondItem="cIw-v8-wWE" secondAttribute="leading" constant="20" id="TKu-an-xge"/>
+                                                <constraint firstItem="rSG-BW-ZNe" firstAttribute="top" secondItem="cIw-v8-wWE" secondAttribute="topMargin" constant="14" id="Uts-l2-a3q"/>
+                                                <constraint firstItem="qpi-Cq-OcO" firstAttribute="top" secondItem="tFs-45-WBq" secondAttribute="bottom" constant="-3.5" id="V8u-qL-9jI"/>
+                                                <constraint firstItem="rSG-BW-ZNe" firstAttribute="leading" secondItem="cIw-v8-wWE" secondAttribute="leadingMargin" constant="14" id="bka-3K-wN1"/>
+                                                <constraint firstAttribute="bottom" secondItem="CXu-eu-Jco" secondAttribute="bottom" id="c1c-PY-Huk"/>
+                                                <constraint firstItem="tFs-45-WBq" firstAttribute="leading" secondItem="cIw-v8-wWE" secondAttribute="leadingMargin" constant="45" id="cor-f9-NLh"/>
+                                                <constraint firstItem="CXu-eu-Jco" firstAttribute="leading" secondItem="cIw-v8-wWE" secondAttribute="leading" constant="10" id="dyg-Eo-Npg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rSG-BW-ZNe" secondAttribute="trailing" constant="14" id="fsH-6m-Ve4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tFs-45-WBq" secondAttribute="trailing" constant="45" id="gAZ-HE-ZzT"/>
+                                                <constraint firstAttribute="trailing" secondItem="qpi-Cq-OcO" secondAttribute="trailing" constant="20" id="wB2-SX-vw9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tourImage" destination="CXu-eu-Jco" id="pBm-5v-G8Q"/>
+                                            <outlet property="tourInfo" destination="tFs-45-WBq" id="1YM-bH-EAD"/>
+                                            <outlet property="tourName" destination="rSG-BW-ZNe" id="LJ4-jd-U16"/>
+                                            <outlet property="tourStartDate" destination="qpi-Cq-OcO" id="hOF-WJ-8oU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tabBar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtR-AE-SFu">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <tabBarItem title="Мої тури" id="QWU-MY-nWn"/>
+                                    <tabBarItem title="Всі тури" id="KG9-JG-sEl"/>
+                                    <tabBarItem title="Профіль" badgeValue="1" id="poR-xu-Nke"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="e66-CF-g9X" firstAttribute="top" secondItem="Kh7-en-25J" secondAttribute="bottom" id="AQ5-E2-DW9"/>
+                            <constraint firstAttribute="trailing" secondItem="e66-CF-g9X" secondAttribute="trailing" id="IRL-ym-twT"/>
                             <constraint firstItem="Kh7-en-25J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PmM-ll-8zV"/>
                             <constraint firstAttribute="trailing" secondItem="Kh7-en-25J" secondAttribute="trailing" id="dDq-i8-7TC"/>
+                            <constraint firstItem="e66-CF-g9X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hGu-98-kLN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e66-CF-g9X" secondAttribute="bottom" id="tHi-es-3rZ"/>
                             <constraint firstItem="Kh7-en-25J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uZD-M2-q4l"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0eM-E0-dGl"/>
+                    <tabBarItem key="tabBarItem" title="Мої тури" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
+                    <connections>
+                        <outlet property="tourTableView" destination="e66-CF-g9X" id="Vzl-Yk-Hsy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-81"/>
+            <point key="canvasLocation" x="2353" y="-787"/>
+        </scene>
+        <!--Всі тури-->
+        <scene sceneID="jPa-2Q-bqg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="67Q-sm-Snq" customClass="AllToursViewController" customModule="TourProgect_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qeZ-R3-uIZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OXY-v4-q6g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AzP-we-uYq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5D-CK-oFg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="53"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Knb-QX-MSU">
+                                        <rect key="frame" x="140.5" y="8" width="95" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="82F-XP-GIO"/>
+                                            <constraint firstAttribute="width" constant="95" id="9Vv-Qi-Hab"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.19200974539999999" blue="0.13755312459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Knb-QX-MSU" firstAttribute="centerY" secondItem="S5D-CK-oFg" secondAttribute="centerY" id="P0t-0b-eyq"/>
+                                    <constraint firstItem="Knb-QX-MSU" firstAttribute="centerX" secondItem="S5D-CK-oFg" secondAttribute="centerX" id="a1J-4K-jeS"/>
+                                    <constraint firstAttribute="height" constant="53" id="v0e-GB-fjJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="317" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ea5-kS-SsY">
+                                <rect key="frame" x="0.0" y="122" width="375" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myToursCell" rowHeight="317" id="CLV-pa-LQK" userLabel="allToursCell" customClass="AllToursTableViewCell" customModule="TourProgect_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="317"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CLV-pa-LQK" id="ebd-n0-Z3l">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="RXp-RG-bV2">
+                                                    <rect key="frame" x="10" y="10" width="355" height="306.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekend в Одесі" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Y-aP-pDM" userLabel="TourNameLabel">
+                                                    <rect key="frame" x="22" y="22" width="331" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Інформація про круті та цікаві штуки в турі - Інформація про круті та цікаві штуки в турі" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-aB-GSu">
+                                                    <rect key="frame" x="53" y="58.5" width="269" height="61"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29.07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRx-t6-PFV">
+                                                    <rect key="frame" x="20" y="116" width="335" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="uSW-1k-J81"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GcI-aB-GSu" firstAttribute="leading" secondItem="ebd-n0-Z3l" secondAttribute="leadingMargin" constant="45" id="0Pn-yV-Gej"/>
+                                                <constraint firstItem="B5Y-aP-pDM" firstAttribute="leading" secondItem="ebd-n0-Z3l" secondAttribute="leadingMargin" constant="14" id="2YI-Nk-jmr"/>
+                                                <constraint firstItem="RXp-RG-bV2" firstAttribute="top" secondItem="ebd-n0-Z3l" secondAttribute="top" constant="10" id="6br-Au-nYi"/>
+                                                <constraint firstItem="RXp-RG-bV2" firstAttribute="leading" secondItem="ebd-n0-Z3l" secondAttribute="leading" constant="10" id="7uu-UQ-pyl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="B5Y-aP-pDM" secondAttribute="trailing" constant="14" id="9Pa-WZ-QeX"/>
+                                                <constraint firstItem="B5Y-aP-pDM" firstAttribute="top" secondItem="ebd-n0-Z3l" secondAttribute="topMargin" constant="14" id="LDT-ZD-Ftn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GcI-aB-GSu" secondAttribute="trailing" constant="45" id="OIM-10-jZC"/>
+                                                <constraint firstAttribute="bottom" secondItem="RXp-RG-bV2" secondAttribute="bottom" id="QkO-lT-yPH"/>
+                                                <constraint firstItem="SRx-t6-PFV" firstAttribute="leading" secondItem="ebd-n0-Z3l" secondAttribute="leading" constant="20" id="WXO-LF-aSH"/>
+                                                <constraint firstAttribute="trailing" secondItem="RXp-RG-bV2" secondAttribute="trailing" constant="10" id="feQ-BQ-nSp"/>
+                                                <constraint firstItem="GcI-aB-GSu" firstAttribute="top" secondItem="B5Y-aP-pDM" secondAttribute="bottom" constant="8" id="kCQ-oO-Vdq"/>
+                                                <constraint firstAttribute="trailing" secondItem="SRx-t6-PFV" secondAttribute="trailing" constant="20" id="r3O-HM-ErN"/>
+                                                <constraint firstItem="SRx-t6-PFV" firstAttribute="top" secondItem="GcI-aB-GSu" secondAttribute="bottom" constant="-3.5" id="xe9-IG-Pe4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tourImage" destination="RXp-RG-bV2" id="NfP-j8-yJK"/>
+                                            <outlet property="tourInfo" destination="GcI-aB-GSu" id="FEQ-Oe-Quu"/>
+                                            <outlet property="tourName" destination="B5Y-aP-pDM" id="4RK-0w-ROm"/>
+                                            <outlet property="tourStartDate" destination="SRx-t6-PFV" id="TDd-GE-dOV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-CB-HKM" userLabel="Top Tab Bar">
+                                <rect key="frame" x="0.0" y="73" width="375" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.1223270803" blue="0.063992253119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <tabBarItem title="Наші тури" id="87a-Xz-WoB"/>
+                                    <tabBarItem title="Рекомендації" id="jXw-my-42Y"/>
+                                </items>
+                                <color key="barTintColor" red="1" green="0.1223270803" blue="0.063992253119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tabBar>
+                            <tabBar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv3-2W-6v5" userLabel="Bottom Tab Bar">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <tabBarItem title="Мої тури" id="Hgd-gD-1mE"/>
+                                    <tabBarItem title="Всі тури" id="7BI-Pf-hCo"/>
+                                    <tabBarItem title="Профіль" badgeValue="1" id="yji-Tr-x58"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4bh-CB-HKM" firstAttribute="top" secondItem="S5D-CK-oFg" secondAttribute="bottom" id="4Hx-h1-rWF"/>
+                            <constraint firstItem="OXY-v4-q6g" firstAttribute="top" secondItem="Ea5-kS-SsY" secondAttribute="bottom" id="Cxf-6V-DvT"/>
+                            <constraint firstItem="Ea5-kS-SsY" firstAttribute="top" secondItem="4bh-CB-HKM" secondAttribute="bottom" id="D5W-fh-LcJ"/>
+                            <constraint firstItem="S5D-CK-oFg" firstAttribute="top" secondItem="qeZ-R3-uIZ" secondAttribute="bottom" id="DK0-0I-cDG"/>
+                            <constraint firstItem="4bh-CB-HKM" firstAttribute="centerX" secondItem="AzP-we-uYq" secondAttribute="centerX" id="OM9-Hc-WYW"/>
+                            <constraint firstItem="Ea5-kS-SsY" firstAttribute="leading" secondItem="AzP-we-uYq" secondAttribute="leading" id="QvJ-5V-p1z"/>
+                            <constraint firstItem="S5D-CK-oFg" firstAttribute="leading" secondItem="AzP-we-uYq" secondAttribute="leading" id="dLP-8R-ufL"/>
+                            <constraint firstAttribute="trailing" secondItem="S5D-CK-oFg" secondAttribute="trailing" id="hCk-Wr-dy1"/>
+                            <constraint firstAttribute="trailing" secondItem="Ea5-kS-SsY" secondAttribute="trailing" id="hZR-rU-WXA"/>
+                            <constraint firstItem="4bh-CB-HKM" firstAttribute="leading" secondItem="AzP-we-uYq" secondAttribute="leadingMargin" constant="-16" id="qXj-kX-rN9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4bh-CB-HKM" secondAttribute="trailing" constant="-16" id="si5-Or-v24"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Всі тури" id="V1P-qb-WvF" userLabel="Всі Тури"/>
+                    <connections>
+                        <outlet property="tourTableView" destination="Ea5-kS-SsY" id="vEP-Gx-pOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCf-sK-DOP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2353" y="-83"/>
+        </scene>
+        <!--Профіль-->
+        <scene sceneID="qpl-Ed-SLn">
+            <objects>
+                <viewController id="hce-2B-jdu" customClass="ProfileViewController" customModule="TourProgect_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PKy-hd-nAg"/>
+                        <viewControllerLayoutGuide type="bottom" id="GVx-IQ-MVQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cN5-3a-rD2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdU-l5-5t8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-Ip-QUe">
+                                        <rect key="frame" x="112.5" y="25" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Vrh-J5-LCu"/>
+                                            <constraint firstAttribute="height" constant="150" id="mPv-sO-hRs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kharambura Pavlo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsU-fD-ogR">
+                                        <rect key="frame" x="20" y="195" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="TTN-2l-BwO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tI-6d-enN">
+                                        <rect key="frame" x="50" y="250" width="275" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MsU-fD-ogR" firstAttribute="top" secondItem="Qgl-Ip-QUe" secondAttribute="bottom" constant="20" id="IX8-Jo-THm"/>
+                                    <constraint firstItem="Qgl-Ip-QUe" firstAttribute="top" secondItem="qdU-l5-5t8" secondAttribute="top" constant="25" id="c0B-Ks-ouD"/>
+                                    <constraint firstItem="Qgl-Ip-QUe" firstAttribute="centerX" secondItem="qdU-l5-5t8" secondAttribute="centerX" id="iIV-1T-x0e"/>
+                                    <constraint firstAttribute="trailing" secondItem="6tI-6d-enN" secondAttribute="trailing" constant="50" id="nji-9C-JsD"/>
+                                    <constraint firstItem="6tI-6d-enN" firstAttribute="top" secondItem="MsU-fD-ogR" secondAttribute="bottom" constant="25" id="p5K-tl-R4x"/>
+                                    <constraint firstItem="6tI-6d-enN" firstAttribute="leading" secondItem="qdU-l5-5t8" secondAttribute="leading" constant="50" id="vPD-iM-zdM"/>
+                                    <constraint firstAttribute="trailing" secondItem="MsU-fD-ogR" secondAttribute="trailing" constant="20" id="xoa-8R-xf4"/>
+                                    <constraint firstItem="MsU-fD-ogR" firstAttribute="leading" secondItem="qdU-l5-5t8" secondAttribute="leading" constant="20" id="yCS-Aw-O3t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qdU-l5-5t8" secondAttribute="trailing" id="LNB-M4-aVo"/>
+                            <constraint firstItem="qdU-l5-5t8" firstAttribute="leading" secondItem="cN5-3a-rD2" secondAttribute="leading" id="bEq-Px-ICj"/>
+                            <constraint firstAttribute="bottom" secondItem="qdU-l5-5t8" secondAttribute="bottom" id="jHa-vp-vfE"/>
+                            <constraint firstItem="qdU-l5-5t8" firstAttribute="top" secondItem="PKy-hd-nAg" secondAttribute="bottom" id="lks-7L-Sf4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профіль" badgeValue="1" id="N28-SS-s8L"/>
+                    <connections>
+                        <outlet property="profileDescription" destination="6tI-6d-enN" id="4bu-P0-i7k"/>
+                        <outlet property="profileImage" destination="Qgl-Ip-QUe" id="6YZ-CH-Fcw"/>
+                        <outlet property="profileName" destination="MsU-fD-ogR" id="Xel-6r-sZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWh-A2-8nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352.8000000000002" y="686.80659670164926"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="398" height="360"/>
+        <image name="myTourTest" width="525" height="457"/>
         <image name="sign_up" width="400" height="625"/>
         <image name="slash" width="72" height="70"/>
         <image name="title" width="425" height="118"/>
