@@ -17,6 +17,7 @@
 		29BED35B1F221911004C3F87 /* UsersInTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */; };
 		29BED35D1F22192B004C3F87 /* UsersInTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */; };
 		29DDB29B1F22308900C749BD /* Coment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDB29A1F22308900C749BD /* Coment.swift */; };
+		29DDB29D1F2295A500C749BD /* TextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */; };
 		29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D51F1FD384002448B5 /* AppDelegate.swift */; };
 		29F2B4DB1F1FD384002448B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4D91F1FD384002448B5 /* Main.storyboard */; };
 		29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 		29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourViewController.swift; sourceTree = "<group>"; };
 		29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourTableViewCell.swift; sourceTree = "<group>"; };
 		29DDB29A1F22308900C749BD /* Coment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coment.swift; sourceTree = "<group>"; };
+		29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtention.swift; sourceTree = "<group>"; };
 		29F2B4D21F1FD384002448B5 /* TourProgect#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TourProgect#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2B4D51F1FD384002448B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F2B4DA1F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		2928AD821F211E120050BBE8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */,
 				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
 				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
 				29F2B4E41F1FD384002448B5 /* Info.plist */,
@@ -234,6 +237,7 @@
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
 				29BED3591F2218CB004C3F87 /* MapViewController.swift in Sources */,
 				2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */,
+				29DDB29D1F2295A500C749BD /* TextFieldExtention.swift in Sources */,
 				2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */,
 				2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */,
 				29BED35B1F221911004C3F87 /* UsersInTourViewController.swift in Sources */,
