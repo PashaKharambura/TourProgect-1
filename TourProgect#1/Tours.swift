@@ -17,4 +17,5 @@ struct Tour {
     var users: [User]
     var tourPicture: URL!
     var recomended: Bool
+    var coments: [Coment]?
 }
