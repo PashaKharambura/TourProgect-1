@@ -13,7 +13,7 @@ struct Event {
     var name: String!
     var description: String?
     var eventPicture: URL!
-    var date: Data!
+    var eventDate: Data!
     var location: CLLocationCoordinate2D
 }
 
