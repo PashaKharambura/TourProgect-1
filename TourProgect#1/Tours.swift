@@ -13,9 +13,9 @@ struct Tour {
     var tourDate: [String]?
     var events: [Event]!
     var description: String?
-    var organisators: [Organisator]!
-    var users: [User]
+    var organizators: [Organizator]!
+    var tourists: [Tourist]
     var tourPicture: URL!
-    var recomended: Bool
-    var coments: [Coment]?
+    var recommended: Bool
+    var comments: [Comment]?
 }
