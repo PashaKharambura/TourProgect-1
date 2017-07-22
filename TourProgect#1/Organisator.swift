@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Organisator {
+struct Organizator {
     var name: String!
     var description: String?
 }
