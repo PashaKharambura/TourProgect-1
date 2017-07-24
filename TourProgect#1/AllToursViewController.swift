@@ -41,5 +41,4 @@ class AllToursViewController: UIViewController, UITableViewDelegate, UITableView
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "Всі тури")
     }
-
 }
