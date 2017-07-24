@@ -13,4 +13,5 @@ struct Coment {
     var comentar: String!
     var aboutTour: Tour!
     var date: Date!
+    
 }

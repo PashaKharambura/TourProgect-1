@@ -1,18 +1,18 @@
 //
-//  AllToursViewController.swift
+//  RecomendedViewController.swift
 //  TourProgect#1
 //
-//  Created by Pavlo Kharambura on 7/20/17.
+//  Created by Pavlo Kharambura on 7/24/17.
 //  Copyright © 2017 Pavlo Kharambura. All rights reserved.
 //
 
 import UIKit
 import XLPagerTabStrip
 
-class AllToursViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IndicatorInfoProvider {
-
+class RecomendedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IndicatorInfoProvider {
+    
     @IBOutlet weak var tourTableView: UITableView!
-
+    
     
     var myTours = ["First", "Second"]
     
@@ -32,14 +32,15 @@ class AllToursViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myToursCell")! as! AllToursTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recomendedToursCell")! as! RecomendedTableViewCell
         
         cell.tourImage.image = UIImage(named: "\(indexPath.row+1)")
         return cell
     }
     
+    
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "Всі тури")
+        return IndicatorInfo(title: " Рекомендації")
     }
-
+    
 }

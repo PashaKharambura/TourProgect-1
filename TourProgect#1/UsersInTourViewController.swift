@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IndicatorInfoProvider {
     @IBOutlet weak var usersTableView: UITableView!
 
     
@@ -19,10 +20,6 @@ class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
     }
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
@@ -34,6 +31,9 @@ class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
 
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Їдуть з вами")
+    }
     
 
 }

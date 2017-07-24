@@ -13,6 +13,11 @@
 		2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD871F21BE1E0050BBE8 /* ProfileViewController.swift */; };
 		2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4C1F20ACAC000633ED /* LogInViewController.swift */; };
 		2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960AD4E1F20B209000633ED /* MyToursViewController.swift */; };
+		2970E6DA1F25F31B0080A142 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E6D91F25F31B0080A142 /* DescriptionViewController.swift */; };
+		2970E6DC1F25F6570080A142 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E6DB1F25F6570080A142 /* ParentViewController.swift */; };
+		2970E6DF1F2607FB0080A142 /* RecomendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E6DE1F2607FB0080A142 /* RecomendedViewController.swift */; };
+		2970E6E11F26080E0080A142 /* RecomendedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E6E01F26080E0080A142 /* RecomendedTableViewCell.swift */; };
+		2970E6E31F26093A0080A142 /* ToursParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E6E21F26093A0080A142 /* ToursParentViewController.swift */; };
 		29BED3591F2218CB004C3F87 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED3581F2218CB004C3F87 /* MapViewController.swift */; };
 		29BED35B1F221911004C3F87 /* UsersInTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */; };
 		29BED35D1F22192B004C3F87 /* UsersInTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */; };
@@ -27,6 +32,7 @@
 		29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4EC1F1FD4E1002448B5 /* Event.swift */; };
 		29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4EE1F1FD56E002448B5 /* User.swift */; };
 		29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4F01F1FD5F0002448B5 /* Organisator.swift */; };
+		91058E9F130EBA89A2B2E3EC /* Pods_TourProgect_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E82823ACEC20F60ACB38F1 /* Pods_TourProgect_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,11 @@
 		2928AD871F21BE1E0050BBE8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2960AD4C1F20ACAC000633ED /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2960AD4E1F20B209000633ED /* MyToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyToursViewController.swift; sourceTree = "<group>"; };
+		2970E6D91F25F31B0080A142 /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		2970E6DB1F25F6570080A142 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		2970E6DE1F2607FB0080A142 /* RecomendedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendedViewController.swift; sourceTree = "<group>"; };
+		2970E6E01F26080E0080A142 /* RecomendedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendedTableViewCell.swift; sourceTree = "<group>"; };
+		2970E6E21F26093A0080A142 /* ToursParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToursParentViewController.swift; path = Assets.xcassets/ToursParentViewController.swift; sourceTree = "<group>"; };
 		29BED3581F2218CB004C3F87 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourViewController.swift; sourceTree = "<group>"; };
 		29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourTableViewCell.swift; sourceTree = "<group>"; };
@@ -52,6 +63,9 @@
 		29F2B4EC1F1FD4E1002448B5 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		29F2B4EE1F1FD56E002448B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		29F2B4F01F1FD5F0002448B5 /* Organisator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organisator.swift; sourceTree = "<group>"; };
+		47DA9E43648393BDF76104A0 /* Pods-TourProgect#1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourProgect#1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TourProgect#1/Pods-TourProgect#1.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C4FFAABE97656979055260 /* Pods-TourProgect#1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourProgect#1.release.xcconfig"; path = "Pods/Target Support Files/Pods-TourProgect#1/Pods-TourProgect#1.release.xcconfig"; sourceTree = "<group>"; };
+		C6E82823ACEC20F60ACB38F1 /* Pods_TourProgect_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourProgect_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91058E9F130EBA89A2B2E3EC /* Pods_TourProgect_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,9 @@
 				2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */,
 				2928AD831F21370B0050BBE8 /* AllToursViewController.swift */,
 				2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */,
+				2970E6DE1F2607FB0080A142 /* RecomendedViewController.swift */,
+				2970E6E01F26080E0080A142 /* RecomendedTableViewCell.swift */,
+				2970E6E21F26093A0080A142 /* ToursParentViewController.swift */,
 			);
 			name = 3Main;
 			sourceTree = "<group>";
@@ -123,9 +141,11 @@
 		29BED3571F2218A7004C3F87 /* TourDescription */ = {
 			isa = PBXGroup;
 			children = (
+				2970E6DB1F25F6570080A142 /* ParentViewController.swift */,
 				29BED3581F2218CB004C3F87 /* MapViewController.swift */,
 				29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */,
 				29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */,
+				2970E6D91F25F31B0080A142 /* DescriptionViewController.swift */,
 			);
 			name = TourDescription;
 			sourceTree = "<group>";
@@ -135,6 +155,8 @@
 			children = (
 				29F2B4D41F1FD384002448B5 /* TourProgect#1 */,
 				29F2B4D31F1FD384002448B5 /* Products */,
+				8AD55F3A0DA4CD2076D15910 /* Pods */,
+				C98819461C0126280163F2F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +179,23 @@
 			path = "TourProgect#1";
 			sourceTree = "<group>";
 		};
+		8AD55F3A0DA4CD2076D15910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47DA9E43648393BDF76104A0 /* Pods-TourProgect#1.debug.xcconfig */,
+				C1C4FFAABE97656979055260 /* Pods-TourProgect#1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C98819461C0126280163F2F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6E82823ACEC20F60ACB38F1 /* Pods_TourProgect_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F2B4E71F1FD384002448B5 /* Build configuration list for PBXNativeTarget "TourProgect#1" */;
 			buildPhases = (
+				0A7E689B8F322376A8D05334 /* [CP] Check Pods Manifest.lock */,
 				29F2B4CE1F1FD384002448B5 /* Sources */,
 				29F2B4CF1F1FD384002448B5 /* Frameworks */,
 				29F2B4D01F1FD384002448B5 /* Resources */,
+				F1BC1C7B00DD4AC9D958BE7A /* [CP] Embed Pods Frameworks */,
+				993E1D491702AE765FC72F92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +266,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A7E689B8F322376A8D05334 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		993E1D491702AE765FC72F92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TourProgect#1/Pods-TourProgect#1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BC1C7B00DD4AC9D958BE7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TourProgect#1/Pods-TourProgect#1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29F2B4CE1F1FD384002448B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,18 +322,23 @@
 				29F2B4ED1F1FD4E1002448B5 /* Event.swift in Sources */,
 				29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */,
 				2928AD841F21370B0050BBE8 /* AllToursViewController.swift in Sources */,
+				2970E6DC1F25F6570080A142 /* ParentViewController.swift in Sources */,
 				2928AD861F21372B0050BBE8 /* AllToursTableViewCell.swift in Sources */,
 				2928AD7B1F211AFA0050BBE8 /* MyTourTableViewCell.swift in Sources */,
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
 				29BED3591F2218CB004C3F87 /* MapViewController.swift in Sources */,
 				2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */,
+				2970E6E11F26080E0080A142 /* RecomendedTableViewCell.swift in Sources */,
 				29DDB29D1F2295A500C749BD /* TextFieldExtention.swift in Sources */,
+				2970E6DF1F2607FB0080A142 /* RecomendedViewController.swift in Sources */,
+				2970E6E31F26093A0080A142 /* ToursParentViewController.swift in Sources */,
 				2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */,
 				2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */,
 				29BED35B1F221911004C3F87 /* UsersInTourViewController.swift in Sources */,
 				29F2B4EB1F1FD3A1002448B5 /* Tours.swift in Sources */,
 				29BED35D1F22192B004C3F87 /* UsersInTourTableViewCell.swift in Sources */,
 				29DDB29B1F22308900C749BD /* Coment.swift in Sources */,
+				2970E6DA1F25F31B0080A142 /* DescriptionViewController.swift in Sources */,
 				29F2B4EF1F1FD56E002448B5 /* User.swift in Sources */,
 				29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */,
 			);
@@ -368,6 +463,7 @@
 		};
 		29F2B4E81F1FD384002448B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DA9E43648393BDF76104A0 /* Pods-TourProgect#1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";
@@ -380,6 +476,7 @@
 		};
 		29F2B4E91F1FD384002448B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C4FFAABE97656979055260 /* Pods-TourProgect#1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";

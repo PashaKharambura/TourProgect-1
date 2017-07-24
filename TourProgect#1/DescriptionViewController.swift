@@ -1,15 +1,15 @@
 //
-//  MapViewController.swift
+//  DescriptionViewController.swift
 //  TourProgect#1
 //
-//  Created by Pavlo Kharambura on 7/21/17.
+//  Created by Pavlo Kharambura on 7/24/17.
 //  Copyright © 2017 Pavlo Kharambura. All rights reserved.
 //
 
 import UIKit
 import XLPagerTabStrip
 
-class MapViewController: UIViewController, IndicatorInfoProvider {
+class DescriptionViewController: UIViewController, IndicatorInfoProvider {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +18,7 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "Карта") 
+        return IndicatorInfo(title: "Про тур")
     }
-
 
 }
