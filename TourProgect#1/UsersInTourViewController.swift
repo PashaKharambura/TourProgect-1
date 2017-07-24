@@ -7,20 +7,17 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IndicatorInfoProvider {
     @IBOutlet weak var usersTableView: UITableView!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         usersTableView.delegate = self
         usersTableView.dataSource = self
         // Do any additional setup after loading the view.
-    }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,7 +30,10 @@ class UsersInTourViewController: UIViewController, UITableViewDelegate, UITableV
         cell.userPicture.image = UIImage(named: "user_icon")
         return cell
     }
-
     
-
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Їдуть з вами")
+    }
+    
+    
 }
