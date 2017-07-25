@@ -133,7 +133,6 @@
 			children = (
 				29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */,
 				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
-				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
 				29F2B4E41F1FD384002448B5 /* Info.plist */,
 				29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */,
 			);
@@ -178,6 +177,7 @@
 				2928AD7F1F211DA80050BBE8 /* Controllers */,
 				2928AD821F211E120050BBE8 /* SupportingFiles */,
 				84DAD1191F23673100D40A81 /* DataModel.swift */,
+				29F2B4DF1F1FD384002448B5 /* Assets.xcassets */,
 			);
 			path = "TourProgect#1";
 			sourceTree = "<group>";

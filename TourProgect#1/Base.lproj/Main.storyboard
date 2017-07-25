@@ -311,7 +311,7 @@
                             <constraint firstItem="qdU-l5-5t8" firstAttribute="top" secondItem="PKy-hd-nAg" secondAttribute="bottom" id="lks-7L-Sf4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Профіль" image="Rectangle" badgeValue="1" id="N28-SS-s8L"/>
+                    <tabBarItem key="tabBarItem" title="Профіль" image="circle-user-7" badgeValue="1" id="N28-SS-s8L"/>
                     <connections>
                         <outlet property="profileDescription" destination="6tI-6d-enN" id="4bu-P0-i7k"/>
                         <outlet property="profileImage" destination="Qgl-Ip-QUe" id="6YZ-CH-Fcw"/>
@@ -326,7 +326,7 @@
         <scene sceneID="piU-ka-QMX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLv-QM-V44" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Мої тури" image="Rectangle" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
+                    <tabBarItem key="tabBarItem" title="Мої тури" image="house-7" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zS8-vy-ZPE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -345,7 +345,7 @@
         <scene sceneID="heK-2A-mS5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XLI-Kp-hy1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Всі тури" image="Rectangle" id="V1P-qb-WvF" userLabel="Всі Тури"/>
+                    <tabBarItem key="tabBarItem" title="Всі тури" image="list-simple-7" id="V1P-qb-WvF" userLabel="Всі Тури"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkj-lF-c4l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -853,8 +853,10 @@
     </scenes>
     <resources>
         <image name="1" width="398" height="360"/>
-        <image name="Rectangle" width="26" height="26"/>
+        <image name="circle-user-7" width="30" height="30"/>
+        <image name="house-7" width="30" height="30"/>
         <image name="included" width="536" height="81"/>
+        <image name="list-simple-7" width="30" height="30"/>
         <image name="myTourTest" width="525" height="457"/>
         <image name="sign_up" width="400" height="625"/>
         <image name="slash" width="72" height="70"/>
