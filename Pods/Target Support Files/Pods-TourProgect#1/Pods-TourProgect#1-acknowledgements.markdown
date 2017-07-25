@@ -5,6 +5,14 @@ This application makes use of the following third party libraries:
 
 Copyright (c) 2012-2017 by Backendless.com
 
+## GoogleMaps
+
+Copyright 2017 Google
+
+## GooglePlaces
+
+Copyright 2017 Google
+
 ## XLPagerTabStrip
 
 The MIT License (MIT)
