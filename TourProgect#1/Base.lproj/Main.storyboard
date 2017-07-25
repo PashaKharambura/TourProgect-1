@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y5w-vW-8CG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y5w-vW-8CG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -176,7 +176,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="317"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ygx-mB-178" id="cIw-v8-wWE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myTourTest" translatesAutoresizingMaskIntoConstraints="NO" id="CXu-eu-Jco">
@@ -363,6 +363,7 @@
         <!--Map View Controller-->
         <scene sceneID="GYq-P5-yVP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3x-Wa-DYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="child1" id="yC5-yD-2GB" customClass="MapViewController" customModule="TourProgect_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1SN-fl-Oh2"/>
@@ -371,24 +372,12 @@
                     <view key="view" contentMode="scaleToFill" id="YPf-dI-1Jb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JdW-pY-hgq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JdW-pY-hgq" secondAttribute="bottom" id="2Qy-eS-mqc"/>
-                            <constraint firstItem="JdW-pY-hgq" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="8LT-Ir-bCF"/>
-                            <constraint firstAttribute="trailing" secondItem="JdW-pY-hgq" secondAttribute="trailing" id="N33-GU-jz0"/>
-                            <constraint firstItem="JdW-pY-hgq" firstAttribute="leading" secondItem="YPf-dI-1Jb" secondAttribute="leading" id="S5S-SZ-qng"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fGs-W9-pnG"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S3x-Wa-DYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6361" y="-447"/>
+            <point key="canvasLocation" x="7132" y="-448"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="Lu1-AH-9M0">
@@ -416,7 +405,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f1H-sb-9n5" id="fB3-7X-Ns1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -437,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdw-eT-Ic7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7727" y="-448"/>
+            <point key="canvasLocation" x="8671" y="-448"/>
         </scene>
         <!--Users In Tour View Controller-->
         <scene sceneID="fnM-6G-Kki">
@@ -459,7 +448,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="280"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YGL-np-3bL" id="3T4-uk-Kgp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="279.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c40-9z-qYr">
@@ -519,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCe-uS-gkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7039" y="-448"/>
+            <point key="canvasLocation" x="7930" y="-448"/>
         </scene>
         <!--All Tours View Controller-->
         <scene sceneID="8Zw-Mn-R5T">
@@ -541,7 +530,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="317"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vns-aQ-zPV" id="eLW-qi-CYY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bt8-3j-OhU">
@@ -634,7 +623,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="317"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQL-Jj-AQ5" id="kIc-kl-HC4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="XJH-Kk-bge">
@@ -849,6 +838,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hu9-zh-KUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5572" y="-447"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1zY-5k-YUD">
+            <objects>
+                <navigationController id="EBT-vW-Tpc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="olX-Sh-tMj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yC5-yD-2GB" kind="relationship" relationship="rootViewController" id="p4U-xW-AWE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjD-tK-Z6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6279" y="-448"/>
         </scene>
     </scenes>
     <resources>
