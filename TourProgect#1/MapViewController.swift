@@ -11,8 +11,12 @@ import GoogleMaps
 
 class MapViewController: UIViewController, IndicatorInfoProvider {
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         GMSServices.provideAPIKey("AIzaSyDI_ru8PsfByOfydUyomBieJfEVBIIiwQs")
         
