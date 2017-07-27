@@ -31,7 +31,6 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
         marker2.title = "second"
         
         let markers: [GMSMarker] = [marker1, marker2]
-        
         addMarker(markers: markers)
     }
     
