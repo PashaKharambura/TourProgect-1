@@ -328,7 +328,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLv-QM-V44" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мої тури" image="house-7" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zS8-vy-ZPE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zS8-vy-ZPE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -347,7 +347,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XLI-Kp-hy1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Всі тури" image="list-simple-7" id="V1P-qb-WvF" userLabel="Всі Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkj-lF-c4l">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Gkj-lF-c4l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -372,19 +372,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JdW-pY-hgq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEi-9j-qzI">
+                                <rect key="frame" x="0.0" y="20" width="140" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Sgd-ND-vql"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gll-Fb-1FC" customClass="GMSMapView">
+                                <rect key="frame" x="135" y="20" width="240" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="RBV-KD-dp5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TrV-kL-iXZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JdW-pY-hgq" secondAttribute="bottom" id="2Qy-eS-mqc"/>
-                            <constraint firstItem="JdW-pY-hgq" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="8LT-Ir-bCF"/>
-                            <constraint firstAttribute="trailing" secondItem="JdW-pY-hgq" secondAttribute="trailing" id="N33-GU-jz0"/>
-                            <constraint firstItem="JdW-pY-hgq" firstAttribute="leading" secondItem="YPf-dI-1Jb" secondAttribute="leading" id="S5S-SZ-qng"/>
+                            <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="pEi-9j-qzI" secondAttribute="bottom" id="8Or-lm-lg5"/>
+                            <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="Gll-Fb-1FC" secondAttribute="bottom" id="Ein-1L-EOL"/>
+                            <constraint firstItem="pEi-9j-qzI" firstAttribute="leading" secondItem="YPf-dI-1Jb" secondAttribute="leading" id="OZt-4r-hPG"/>
+                            <constraint firstAttribute="trailing" secondItem="Gll-Fb-1FC" secondAttribute="trailing" id="TZc-me-V7x"/>
+                            <constraint firstItem="pEi-9j-qzI" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="XJv-uj-6Pk"/>
+                            <constraint firstItem="Gll-Fb-1FC" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="vRp-mj-9XT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fGs-W9-pnG"/>
+                    <connections>
+                        <outlet property="MyMapView" destination="Gll-Fb-1FC" id="4v6-Yc-vgc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3x-Wa-DYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
