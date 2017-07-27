@@ -391,7 +391,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLv-QM-V44" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мої тури" image="MyTours" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zS8-vy-ZPE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zS8-vy-ZPE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -410,7 +410,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XLI-Kp-hy1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Всі тури" image="AllTours" id="V1P-qb-WvF" userLabel="Всі Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Gkj-lF-c4l">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkj-lF-c4l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
