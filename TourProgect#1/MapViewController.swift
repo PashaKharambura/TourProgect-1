@@ -17,7 +17,9 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let PinchGesture = UIPinchGestureRecognizer(target: self, action: "PinchGesture")
+        self.MyMapView.addGestureRecognizer(PinchGesture)
+
         
         
         let camera = GMSCameraPosition.camera(withLatitude: 46.467694, longitude: 30.705600, zoom: 10)
@@ -44,5 +46,9 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
         return IndicatorInfo(title: "Карта")
     }
     
+    func PinchGesture(sender: UIPinchGestureRecognizer) {
+        sender.view!.transform = sender.view!.transform.scaledBy(x: sender.scale, y: sender.scale)
+        sender.scale = 1
+    }
     
 }
