@@ -25,20 +25,43 @@ let Places = [
 
 var markerDict: [String: GMSMarker] = [:]
 
+var currentZoom: Float = 10
+
 class MapViewController: UIViewController, IndicatorInfoProvider {
     
     @IBOutlet weak var MyMapView: GMSMapView!
+    
+   
+    @IBAction func zoomPlus(_ sender: Any) {
+        
+        currentZoom = currentZoom + 1
+        
+        self.MyMapView.animate(toZoom: currentZoom)
+        
+    }
+        
+    
+    @IBAction func zoomMinus(_ sender: Any) {
+    
+        currentZoom = currentZoom - 1
+        
+        self.MyMapView.animate(toZoom: currentZoom)
+    
+    }
+    
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
-        let PinchGesture = UIPinchGestureRecognizer(target: self, action: "PinchGesture")
+        let PinchGesture = UIPinchGestureRecognizer(target: self, action: Selector(("PinchGesture")))//пінч ту зум
         self.MyMapView.addGestureRecognizer(PinchGesture)
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: 46.467694, longitude: 30.705600, zoom: 10)
+        let camera = GMSCameraPosition.camera(withLatitude: 46.467694, longitude: 30.705600, zoom: currentZoom)
         MyMapView.camera = camera
         
         for Place in Places {
@@ -65,44 +88,3 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
     
     
 }
-/*
-
- class MapViewController: UIViewController, IndicatorInfoProvider {
- 
- 
- 
- let PinchGesture = UIPinchGestureRecognizer(target: self, action: "PinchGesture")
- self.MyMapView.addGestureRecognizer(PinchGesture)
- 
- 
- let camera = GMSCameraPosition.camera(withLatitude: 46.467694, longitude: 30.705600, zoom: 10)
- MyMapView.camera = camera
- 
- for Place in Places {
- let Place_marker = GMSMarker()
- Place_marker.position = CLLocationCoordinate2D(latitude: Place.lat, longitude: Place.long)
- Place_marker.title = Place.name
- Place_marker.map = MyMapView
- markerDict[Place.name] = Place_marker
- }
- 
- 
- 
- 
- 
- // Do any additional setup after loading the view.
- }
- 
- func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
- return IndicatorInfo(title: "Карта")
- }
- 
- func PinchGesture(sender: UIPinchGestureRecognizer) {
- sender.view!.transform = sender.view!.transform.scaledBy(x: sender.scale, y: sender.scale)
- sender.scale = 1
- }
- 
- }
-
- 
- */

@@ -387,14 +387,44 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TrV-kL-iXZ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" alpha="0.59999999999999998" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0h-JW-1E4" userLabel="Minus">
+                                <rect key="frame" x="299" y="607" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0Yu-mJ-hoa"/>
+                                    <constraint firstAttribute="height" constant="30" id="BKL-qt-KBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="zoomMinus:" destination="yC5-yD-2GB" eventType="touchUpInside" id="S2v-BL-58B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24D-Cx-cU4" userLabel="Plus">
+                                <rect key="frame" x="269" y="607" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ISy-On-daz"/>
+                                    <constraint firstAttribute="height" constant="30" id="gTD-Wt-SfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="zoomPlus:" destination="yC5-yD-2GB" eventType="touchUpInside" id="fYU-Xw-IZk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="pEi-9j-qzI" secondAttribute="bottom" id="8Or-lm-lg5"/>
                             <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="Gll-Fb-1FC" secondAttribute="bottom" id="Ein-1L-EOL"/>
+                            <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="v0h-JW-1E4" secondAttribute="bottom" constant="30" id="IKJ-Q3-djb"/>
+                            <constraint firstItem="Yxt-f8-DGP" firstAttribute="top" secondItem="24D-Cx-cU4" secondAttribute="bottom" constant="30" id="JkB-fi-nLx"/>
                             <constraint firstItem="pEi-9j-qzI" firstAttribute="leading" secondItem="YPf-dI-1Jb" secondAttribute="leading" id="OZt-4r-hPG"/>
                             <constraint firstAttribute="trailing" secondItem="Gll-Fb-1FC" secondAttribute="trailing" id="TZc-me-V7x"/>
                             <constraint firstItem="pEi-9j-qzI" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="XJv-uj-6Pk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="24D-Cx-cU4" secondAttribute="trailing" constant="60" id="dSf-4X-v9c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v0h-JW-1E4" secondAttribute="trailing" constant="30" id="jcU-4J-sKo"/>
                             <constraint firstItem="Gll-Fb-1FC" firstAttribute="top" secondItem="1SN-fl-Oh2" secondAttribute="bottom" id="vRp-mj-9XT"/>
                         </constraints>
                     </view>
@@ -405,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3x-Wa-DYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6361" y="-447"/>
+            <point key="canvasLocation" x="6360.8000000000002" y="-447.52623688155927"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="Lu1-AH-9M0">
