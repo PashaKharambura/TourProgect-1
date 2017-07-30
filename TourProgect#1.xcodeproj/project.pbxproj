@@ -23,7 +23,7 @@
 		29BED35B1F221911004C3F87 /* UsersInTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */; };
 		29BED35D1F22192B004C3F87 /* UsersInTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */; };
 		29DDB29B1F22308900C749BD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDB29A1F22308900C749BD /* Comment.swift */; };
-		29DDB29D1F2295A500C749BD /* TextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */; };
+		29DDB29D1F2295A500C749BD /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DDB29C1F2295A500C749BD /* Extentions.swift */; };
 		29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4D51F1FD384002448B5 /* AppDelegate.swift */; };
 		29F2B4DB1F1FD384002448B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F2B4D91F1FD384002448B5 /* Main.storyboard */; };
 		29F2B4DE1F1FD384002448B5 /* TourProgect_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */; };
@@ -54,7 +54,7 @@
 		29BED35A1F221911004C3F87 /* UsersInTourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourViewController.swift; sourceTree = "<group>"; };
 		29BED35C1F22192B004C3F87 /* UsersInTourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInTourTableViewCell.swift; sourceTree = "<group>"; };
 		29DDB29A1F22308900C749BD /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtention.swift; sourceTree = "<group>"; };
+		29DDB29C1F2295A500C749BD /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		29F2B4D21F1FD384002448B5 /* TourProgect#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TourProgect#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2B4D51F1FD384002448B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F2B4DA1F1FD384002448B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		2928AD821F211E120050BBE8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				29DDB29C1F2295A500C749BD /* TextFieldExtention.swift */,
+				29DDB29C1F2295A500C749BD /* Extentions.swift */,
 				29F2B4D51F1FD384002448B5 /* AppDelegate.swift */,
 				29F2B4E41F1FD384002448B5 /* Info.plist */,
 				29F2B4DC1F1FD384002448B5 /* TourProgect_1.xcdatamodeld */,
@@ -237,6 +237,7 @@
 				TargetAttributes = {
 					29F2B4D11F1FD384002448B5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7ZBZB7WTZS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -335,7 +336,7 @@
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,
 				29BED3591F2218CB004C3F87 /* MapViewController.swift in Sources */,
 				2928AD881F21BE1E0050BBE8 /* ProfileViewController.swift in Sources */,
-				29DDB29D1F2295A500C749BD /* TextFieldExtention.swift in Sources */,
+				29DDB29D1F2295A500C749BD /* Extentions.swift in Sources */,
 				2960AD4D1F20ACAC000633ED /* LogInViewController.swift in Sources */,
 				2960AD4F1F20B209000633ED /* MyToursViewController.swift in Sources */,
 				296C01CB1F26301A00B0624F /* ParentSecondViewController.swift in Sources */,
@@ -474,8 +475,9 @@
 			baseConfigurationReference = A94BBFEB70683F01BCE0B206 /* Pods-TourProgect#1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "pasha.TourProgect-1";
@@ -490,8 +492,9 @@
 			baseConfigurationReference = F10001F68DA53C171F42DB1D /* Pods-TourProgect#1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "pasha.TourProgect-1";
