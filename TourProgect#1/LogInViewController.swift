@@ -19,6 +19,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         firstTextField.delegate = self
         secondTextField.delegate = self
         thirdTextField.delegate = self
+
         
         firstTextField.becomeFirstResponder()
         self.hideKeyboardWhenTappedAround()
