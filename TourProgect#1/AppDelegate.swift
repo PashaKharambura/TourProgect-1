@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import GoogleMaps
+import IQKeyboardManagerSwift
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyDI_ru8PsfByOfydUyomBieJfEVBIIiwQs")
+        IQKeyboardManager.sharedManager().enable = true
         return true
     }
 

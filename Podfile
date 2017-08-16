@@ -8,6 +8,8 @@ target 'TourProgect#1' do
     pod 'GooglePlaces'
     pod 'Backendless', '~> 4.0'
     pod 'XLPagerTabStrip', :git => 'https://github.com/KelvinJin/XLPagerTabStrip', :branch => 'swift3'
-
+    pod 'IQKeyboardManagerSwift'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
 end
 
