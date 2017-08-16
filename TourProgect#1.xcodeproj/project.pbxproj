@@ -254,7 +254,7 @@
 				TargetAttributes = {
 					29F2B4D11F1FD384002448B5 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7ZBZB7WTZS;
+						DevelopmentTeam = D9V922QB92;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -495,7 +495,7 @@
 			baseConfigurationReference = A94BBFEB70683F01BCE0B206 /* Pods-TourProgect#1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
+				DEVELOPMENT_TEAM = D9V922QB92;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,7 +512,7 @@
 			baseConfigurationReference = F10001F68DA53C171F42DB1D /* Pods-TourProgect#1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
+				DEVELOPMENT_TEAM = D9V922QB92;
 				INFOPLIST_FILE = "TourProgect#1/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

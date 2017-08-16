@@ -17,22 +17,35 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var scrolView: UIScrollView!
     @IBOutlet weak var faceButton: UIButton!
 
+    @IBOutlet weak var logoutBtn: UIButton!
     @IBOutlet weak var deskriptionTextView: UITextView!
     @IBOutlet weak var TelephoneNumberTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         profileImage.image = UIImage(named: "user_icon")
         profileImage.layer.cornerRadius = 75.0
+        logoutBtn.layer.cornerRadius = 20.0
+        logoutBtn.isHidden = true
     }
+
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if FBSDKAccessToken.current() != nil {
+            faceButton.isHidden = true
+            logoutBtn.isHidden = false
+        }
     }
     
     @IBAction func pickerButtonPressed(_ sender: UIButton) {
         
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        
         
         let actionShet = UIAlertController(title: "Photo sourse", message: "Choose a source", preferredStyle: .actionSheet)
         
@@ -71,6 +84,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func facebookBtnPressed(_ sender: UIButton) {
         if FBSDKAccessToken.current() != nil {
             self.faceButton.isHidden = true
+            self.logoutBtn.isHidden = false
         } else {
             FacebokkManager.shared.logIn(withReadPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
                 if error == nil {
@@ -88,6 +102,17 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+        
+        logoutBtn.isHidden = true
+        faceButton.isHidden = false
+        FacebokkManager.shared.logOut()
+        User.currentUser.ressetUser()
+        profileImage.image = UIImage(named: "user_icon")
+        profileName.text = "Введіть своє ім'я"
+        
+        
+    }
 
     
     

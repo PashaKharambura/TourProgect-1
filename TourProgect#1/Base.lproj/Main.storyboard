@@ -306,7 +306,7 @@
                                     <action selector="pickerButtonPressed:" destination="hce-2B-jdu" eventType="touchUpInside" id="kJR-4L-YHB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kharambura Pavlo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsU-fD-ogR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kharambura Pavlo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MsU-fD-ogR">
                                 <rect key="frame" x="20" y="226" width="335" height="39"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -321,6 +321,16 @@
                                 <state key="normal" title="Button" image="fb"/>
                                 <connections>
                                     <action selector="facebookBtnPressed:" destination="hce-2B-jdu" eventType="touchUpInside" id="X12-cm-qYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-FV-TOM">
+                                <rect key="frame" x="117.5" y="273" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.35313010220000002" green="0.44329571719999999" blue="0.69774931669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Вийти з Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutBtnPressed:" destination="hce-2B-jdu" eventType="touchUpInside" id="PAL-7E-yiw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вкажіть свій номер телефону:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc7-tV-xpp">
@@ -356,15 +366,19 @@
                             <constraint firstItem="NKc-k2-UeW" firstAttribute="top" secondItem="8Xz-DQ-gw9" secondAttribute="bottom" id="6bU-9y-r1w"/>
                             <constraint firstItem="Qgl-Ip-QUe" firstAttribute="centerX" secondItem="cN5-3a-rD2" secondAttribute="centerX" id="9No-Bi-Cbv"/>
                             <constraint firstItem="Qgl-Ip-QUe" firstAttribute="top" secondItem="8Xz-DQ-gw9" secondAttribute="bottom" constant="15" id="EYS-0F-aGX"/>
+                            <constraint firstItem="cGo-FV-TOM" firstAttribute="centerY" secondItem="uta-0c-0Bd" secondAttribute="centerY" id="Eae-KE-4qg"/>
                             <constraint firstItem="Dxf-jp-4vT" firstAttribute="leading" secondItem="cN5-3a-rD2" secondAttribute="leading" constant="20" id="G1u-Md-tSQ"/>
                             <constraint firstItem="NKc-k2-UeW" firstAttribute="leading" secondItem="cN5-3a-rD2" secondAttribute="leading" id="HW4-Fh-DOS"/>
+                            <constraint firstItem="cGo-FV-TOM" firstAttribute="height" secondItem="uta-0c-0Bd" secondAttribute="height" id="K38-Ks-mSW"/>
                             <constraint firstItem="uta-0c-0Bd" firstAttribute="centerX" secondItem="cN5-3a-rD2" secondAttribute="centerX" id="KwY-Yx-96Y"/>
+                            <constraint firstItem="cGo-FV-TOM" firstAttribute="width" secondItem="uta-0c-0Bd" secondAttribute="width" constant="100" id="NyO-4b-gTp"/>
                             <constraint firstItem="rc7-tV-xpp" firstAttribute="leading" secondItem="cN5-3a-rD2" secondAttribute="leading" constant="20" id="Thw-jy-Pqj"/>
                             <constraint firstAttribute="trailing" secondItem="Dxf-jp-4vT" secondAttribute="trailing" constant="20" id="Ul8-ub-cNy"/>
                             <constraint firstItem="Pzm-Sc-e4J" firstAttribute="top" secondItem="rc7-tV-xpp" secondAttribute="bottom" constant="8" id="WMZ-5j-Mml"/>
                             <constraint firstAttribute="trailing" secondItem="sDt-Hy-ezA" secondAttribute="trailing" constant="20" id="Zmp-cT-rxk"/>
                             <constraint firstItem="MsU-fD-ogR" firstAttribute="leading" secondItem="cN5-3a-rD2" secondAttribute="leading" constant="20" id="al7-ZQ-8fk"/>
                             <constraint firstAttribute="trailing" secondItem="Pzm-Sc-e4J" secondAttribute="trailing" constant="20" id="b2e-5p-54E"/>
+                            <constraint firstItem="cGo-FV-TOM" firstAttribute="centerX" secondItem="uta-0c-0Bd" secondAttribute="centerX" id="bc6-Pf-EKv"/>
                             <constraint firstAttribute="trailing" secondItem="rc7-tV-xpp" secondAttribute="trailing" constant="20" id="bit-QF-Rcu"/>
                             <constraint firstItem="sKR-dS-J8l" firstAttribute="centerY" secondItem="Qgl-Ip-QUe" secondAttribute="centerY" id="d8Y-SZ-2EZ"/>
                             <constraint firstItem="sDt-Hy-ezA" firstAttribute="top" secondItem="Dxf-jp-4vT" secondAttribute="bottom" constant="8" id="edI-Qy-lra"/>
@@ -383,6 +397,7 @@
                     <connections>
                         <outlet property="TelephoneNumberTextView" destination="sDt-Hy-ezA" id="X77-5U-3Dd"/>
                         <outlet property="faceButton" destination="uta-0c-0Bd" id="UZf-w9-8gm"/>
+                        <outlet property="logoutBtn" destination="cGo-FV-TOM" id="N00-cd-e1e"/>
                         <outlet property="profileImage" destination="Qgl-Ip-QUe" id="6YZ-CH-Fcw"/>
                         <outlet property="profileName" destination="MsU-fD-ogR" id="Xel-6r-sZ2"/>
                     </connections>
@@ -397,7 +412,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLv-QM-V44" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мої тури" image="MyTours" id="aZ2-SH-L6l" userLabel="Мої Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zS8-vy-ZPE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zS8-vy-ZPE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -416,7 +431,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XLI-Kp-hy1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Всі тури" image="AllTours" id="V1P-qb-WvF" userLabel="Всі Тури"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Gkj-lF-c4l">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkj-lF-c4l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
