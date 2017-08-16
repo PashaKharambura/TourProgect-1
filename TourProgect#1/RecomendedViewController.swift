@@ -40,7 +40,7 @@ class RecomendedViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: " Рекомендації")
+        return IndicatorInfo(title: "Рекомендовані тури")
     }
     
 }

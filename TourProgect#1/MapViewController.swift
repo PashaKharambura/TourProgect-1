@@ -17,7 +17,7 @@ class MapViewController: UIViewController, IndicatorInfoProvider {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let PinchGesture = UIPinchGestureRecognizer(target: self, action: "PinchGesture")
+        let PinchGesture = UIPinchGestureRecognizer(target: self, action: Selector(("PinchGesture")))
         self.MyMapView.addGestureRecognizer(PinchGesture)
 
         
