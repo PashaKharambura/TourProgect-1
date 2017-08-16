@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate{
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var profileDescription: UILabel!
     @IBOutlet weak var scrolView: UIScrollView!
+    @IBOutlet weak var faceButton: UIButton!
 
     @IBOutlet weak var deskriptionTextView: UITextView!
     @IBOutlet weak var TelephoneNumberTextView: UITextView!
@@ -20,12 +23,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         profileImage.image = UIImage(named: "user_icon")
         profileImage.layer.cornerRadius = 75.0
-//        profileImage.layer.shadowColor = UIColor.black.cgColor
-//        profileImage.layer.shadowOffset = CGSize.zero
-//        profileImage.layer.shadowOpacity = 0.8
-//        profileImage.layer.shadowRadius = 5
-    
-        
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -71,32 +68,27 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         picker.dismiss(animated: true, completion: nil)
     }
+    @IBAction func facebookBtnPressed(_ sender: UIButton) {
+        if FBSDKAccessToken.current() != nil {
+            self.faceButton.isHidden = true
+        } else {
+            FacebokkManager.shared.logIn(withReadPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
+                if error == nil {
+                    
+                    FacebokkManager.getUserData(complition: {
+                        self.profileName.text = User.currentUser.name
+                        self.profileImage.image = try! UIImage(data: Data(contentsOf: URL(string: User.currentUser.pictureUrl!)!))
+                    })
+                    
+                    
+                }
+            })
+        }
+        
+        
+    }
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        
-//        textField.resignFirstResponder()
-//        return true
-//    }
-//    
-//    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
-//        
-//        
-//        return true
-//    }
-//    
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        scrolView.setContentOffset(CGPoint(x: 0, y: 200), animated: true)
-//    }
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        scrolView.setContentOffset(CGPoint(x: 0, y: 200), animated: true)
-//    }
-//    
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        scrolView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-//    }
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        scrolView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-//    }
+
     
     
     

@@ -18,6 +18,7 @@ PODS:
   - GooglePlaces (2.3.1):
     - GoogleMaps/Base (= 2.3.1)
   - IQKeyboardManagerSwift (4.0.11)
+  - SwiftyJSON (3.1.4)
   - XLPagerTabStrip (5.0.0)
 
 DEPENDENCIES:
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - IQKeyboardManagerSwift
+  - SwiftyJSON
   - XLPagerTabStrip (from `https://github.com/KelvinJin/XLPagerTabStrip`, branch `swift3`)
 
 EXTERNAL SOURCES:
@@ -47,8 +49,9 @@ SPEC CHECKSUMS:
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
   IQKeyboardManagerSwift: 10f0a6b8ea2904c8943c0e1a116c99f5b8ad83af
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   XLPagerTabStrip: 87b8b705f9a7178e76a063ffaa2d70045944a965
 
-PODFILE CHECKSUM: f95b68386025229fec4aee3ea718418d73eb800a
+PODFILE CHECKSUM: 33992d3763ce0c5c1293dabe05aaa42a5449bef4
 
 COCOAPODS: 1.2.1

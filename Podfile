@@ -11,5 +11,6 @@ target 'TourProgect#1' do
     pod 'IQKeyboardManagerSwift'
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
+    pod 'SwiftyJSON'
 end
 

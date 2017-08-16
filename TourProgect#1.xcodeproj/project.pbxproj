@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FAE6491F44BA49001F7D4F /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FAE6481F44BA49001F7D4F /* FacebookManager.swift */; };
+		20FAE64B1F44BA96001F7D4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FAE64A1F44BA96001F7D4F /* User.swift */; };
 		2928AD7B1F211AFA0050BBE8 /* MyTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */; };
 		2928AD841F21370B0050BBE8 /* AllToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD831F21370B0050BBE8 /* AllToursViewController.swift */; };
 		2928AD861F21372B0050BBE8 /* AllToursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FAE6481F44BA49001F7D4F /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		20FAE64A1F44BA96001F7D4F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2928AD7A1F211AFA0050BBE8 /* MyTourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTourTableViewCell.swift; sourceTree = "<group>"; };
 		2928AD831F21370B0050BBE8 /* AllToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursViewController.swift; sourceTree = "<group>"; };
 		2928AD851F21372B0050BBE8 /* AllToursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllToursTableViewCell.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20FAE6471F44BA25001F7D4F /* FacebookManager */ = {
+			isa = PBXGroup;
+			children = (
+				20FAE6481F44BA49001F7D4F /* FacebookManager.swift */,
+				20FAE64A1F44BA96001F7D4F /* User.swift */,
+			);
+			name = FacebookManager;
+			sourceTree = "<group>";
+		};
 		2928AD7D1F211D790050BBE8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +191,7 @@
 		29F2B4D41F1FD384002448B5 /* TourProgect#1 */ = {
 			isa = PBXGroup;
 			children = (
+				20FAE6471F44BA25001F7D4F /* FacebookManager */,
 				2928AD811F211DE60050BBE8 /* StoryBoard */,
 				2928AD7D1F211D790050BBE8 /* Model */,
 				2928AD7F1F211DA80050BBE8 /* Controllers */,
@@ -334,6 +348,8 @@
 				29F2B4F11F1FD5F0002448B5 /* Organisator.swift in Sources */,
 				2928AD841F21370B0050BBE8 /* AllToursViewController.swift in Sources */,
 				2928AD861F21372B0050BBE8 /* AllToursTableViewCell.swift in Sources */,
+				20FAE64B1F44BA96001F7D4F /* User.swift in Sources */,
+				20FAE6491F44BA49001F7D4F /* FacebookManager.swift in Sources */,
 				2928AD7B1F211AFA0050BBE8 /* MyTourTableViewCell.swift in Sources */,
 				296C01C91F26300700B0624F /* ParentFirstViewController.swift in Sources */,
 				29F2B4D61F1FD384002448B5 /* AppDelegate.swift in Sources */,

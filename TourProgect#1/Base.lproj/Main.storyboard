@@ -319,6 +319,9 @@
                                     <constraint firstAttribute="height" constant="40" id="qMb-pe-jXB"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="fb"/>
+                                <connections>
+                                    <action selector="facebookBtnPressed:" destination="hce-2B-jdu" eventType="touchUpInside" id="X12-cm-qYd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вкажіть свій номер телефону:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc7-tV-xpp">
                                 <rect key="frame" x="20" y="331" width="335" height="20"/>
@@ -379,6 +382,7 @@
                     <tabBarItem key="tabBarItem" title="Профіль" image="Profile" id="N28-SS-s8L"/>
                     <connections>
                         <outlet property="TelephoneNumberTextView" destination="sDt-Hy-ezA" id="X77-5U-3Dd"/>
+                        <outlet property="faceButton" destination="uta-0c-0Bd" id="UZf-w9-8gm"/>
                         <outlet property="profileImage" destination="Qgl-Ip-QUe" id="6YZ-CH-Fcw"/>
                         <outlet property="profileName" destination="MsU-fD-ogR" id="Xel-6r-sZ2"/>
                     </connections>
